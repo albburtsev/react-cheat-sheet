@@ -2037,7 +2037,7 @@ var _vendorPrism2 = _interopRequireDefault(_vendorPrism);
 
 var styles = {
   root: _extends({}, _styles.article, {
-    borderBottom: '1px solid #333'
+    borderBottom: '1px solid #aaa'
   }),
   header: {
     overflowY: 'scroll'
@@ -2110,7 +2110,7 @@ var ReferenceItem = function ReferenceItem(_ref) {
       { style: styles.reference },
       href && _react2['default'].createElement(
         'a',
-        { href: href, target: '_blank' },
+        { href: href, style: { color: "#56b6c2" }, target: '_blank' },
         'Read more →'
       )
     )
@@ -2874,11 +2874,12 @@ function filterResults(predicate, _data) {
 }
 
 var inputStyle = {
-  width: "50%",
+  width: "100%",
   padding: 10,
   fontSize: "1em",
   borderRadius: 2,
   border: "1px solid #aaa",
+  boxSizing: "border-box",
   color: "black"
 };
 
